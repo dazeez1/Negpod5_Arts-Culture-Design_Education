@@ -16,7 +16,7 @@ def save_artworks(artworks):
 # Function to display the main menu
 def display_menu():
     print("\n=== Vivid Vision Vault ===")
-    print("1. Retrieve all artworks")
+    print("1. Display all artworks")
     print("2. Add an artwork")
     print("3. Review an artwork")
     print("4. Create an account")
@@ -30,7 +30,7 @@ def handle_user_input():
     choice = input("Enter your choice (1-7): ")
 
     if choice == '1':
-        retrieve_all_artworks()
+        display_all_artworks()
     elif choice == '2':
         add_artwork()
     elif choice == '3':
