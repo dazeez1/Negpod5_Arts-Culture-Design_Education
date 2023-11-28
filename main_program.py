@@ -13,6 +13,7 @@ while True:
     print("=========================")
 
     choice = input("Enter your choice (1-7): ")
+    print("\n")
 
     if choice == '1':
         retrieve_all_artworks()

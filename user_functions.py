@@ -42,7 +42,8 @@ def retrieve_all_artworks():
         print(f"Artist: {artwork['artist']}")
         print(f"Description: {artwork['description']}")
         print(f"Image URL: {artwork['imageUrl']}")
-        print("===")
+        print(f"Reviews : {artwork['reviews']}")
+        print("\n++++++++++ \n")
 
 
 # Function to add an artwork
@@ -58,7 +59,7 @@ def add_artwork():
         "title": title,
         "artist": artist,
         "description": description,
-        "reviews": [],
+        "reviews": {},
         "Image": imageUrl
     }
 
@@ -76,7 +77,8 @@ def review_artwork():
 
     for artwork in artworks:
         if artwork['title'] == title:
-            review = input("Enter your review: ")
+            name = input("Enter your name: ")
+            reviewBody = input("Enter your review: ")
             artwork['reviews'].append(review)
             save_artworks(artworks)
             print("Review added successfully.")
