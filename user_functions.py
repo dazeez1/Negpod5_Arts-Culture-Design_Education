@@ -3,6 +3,7 @@ import hashlib
 import random
 import string
 
+
 # Function to load user data from a JSON file
 def load_users():
     try:
@@ -11,10 +12,12 @@ def load_users():
     except FileNotFoundError:
         return {}
 
+
 # Function to save user data to a JSON file
 def save_users(users):
     with open('users.json', 'w') as f:
         json.dump(users, f, indent=2)
+
 
 # Function to load artwork data from a JSON file
 def load_artworks():
@@ -24,10 +27,12 @@ def load_artworks():
     except FileNotFoundError:
         return []
 
+
 # Function to save artwork data to a JSON file
 def save_artworks(artworks):
     with open('artworks.json', 'w') as f:
         json.dump(artworks, f, indent=2)
+
 
 # Function to retrieve all artworks
 def retrieve_all_artworks():
@@ -36,21 +41,26 @@ def retrieve_all_artworks():
         print(f"Title: {artwork['title']}")
         print(f"Artist: {artwork['artist']}")
         print(f"Description: {artwork['description']}")
-        print("===")
+        print(f"Image URL: {artwork['imageUrl']}")
+        print(f"Reviews : {artwork['reviews']}")
+        print("\n++++++++++ \n")
+
 
 # Function to add an artwork
 def add_artwork():
     artworks = load_artworks()
-    
+
     title = input("Enter the title of the artwork: ")
     artist = input("Enter the artist of the artwork: ")
     description = input("Enter the description of the artwork: ")
+    imageUrl = input("Enter the image URL:")
 
     new_artwork = {
         "title": title,
         "artist": artist,
         "description": description,
-        "reviews": []
+        "reviews": [],
+        "Image": imageUrl
     }
 
     artworks.append(new_artwork)
@@ -58,10 +68,11 @@ def add_artwork():
 
     print("Artwork added successfully!")
 
+
 # Function to review an artwork
 def review_artwork():
     artworks = load_artworks()
-    
+
     title = input("Enter the title of the artwork you want to review: ")
 
     for artwork in artworks:
@@ -78,7 +89,7 @@ def review_artwork():
 # Function to create a new user account
 def create_account():
     users = load_users()
-    
+
     username = input("Enter your username: ")
     password = input("Enter your password: ")
 
@@ -95,6 +106,7 @@ def create_account():
     save_users(users)
 
     print("Account created successfully!")
+
 
 # Function to log in
 def login():
@@ -119,6 +131,7 @@ def login():
         print("Invalid password.")
         return False
 
+
 # Function for password recovery
 def recover_password():
     users = load_users()
@@ -137,6 +150,7 @@ def recover_password():
     # Update the stored password with the temporary password
     users[username]['password'] = hashlib.sha256(temporary_password.encode()).hexdigest()
     save_users(users)
+
 
 # Function to exit the program
 def exit_application():

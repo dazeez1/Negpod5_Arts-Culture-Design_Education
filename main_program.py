@@ -2,7 +2,7 @@ from user_functions import retrieve_all_artworks, add_artwork, review_artwork, c
 
 # Main program loop
 while True:
-    print("\n=== Vivid Vision Vault ===")
+    print("\n=== Vivid Vision Vault ===", "\n")
     print("1. Retrieve all artworks")
     print("2. Add an artwork")
     print("3. Review an artwork")
@@ -13,6 +13,7 @@ while True:
     print("=========================")
 
     choice = input("Enter your choice (1-7): ")
+    print("\n")
 
     if choice == '1':
         retrieve_all_artworks()

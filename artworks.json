@@ -5,15 +5,18 @@
     "description": "Freedom",
     "reviews": [
       "A good piece of art"
-    ]
+    ],
+    "imageUrl": "https://img.cdn-pictorem.com/uploads/collection/B/BK2HMP3UEF/900_Long-Art_Dr%20Dre%20Rapper%20Wpap.jpg"
   },
   {
     "title": "Peace",
     "artist": "Koosi",
     "description": "Africa Peace",
     "reviews": [
-      "The aertwork mis refreshing and interesting"
-    ]
+      "The artwork mis refreshing and interesting"
+    ],
+    "imageUrl": "https://ocdn.eu/images/pulscms/MDc7MDA_/4e5c07d4bf1952d14550c294e739c965.jpg"
+
   },
   {
     "title": "Mona",
@@ -21,6 +24,7 @@
     "description": "worlds art",
     "reviews": [
       "one of a kind"
-    ]
+    ],
+    "imageUrl": "https://cdn.britannica.com/24/189624-050-F3C5BAA9/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg"
   }
 ]
