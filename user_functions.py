@@ -42,7 +42,8 @@ def retrieve_all_artworks():
         print(f"Artist: {artwork['artist']}")
         print(f"Description: {artwork['description']}")
         print(f"Image URL: {artwork['imageUrl']}")
-        print("===")
+        print(f"Reviews : {artwork['reviews']}")
+        print("\n++++++++++ \n")
 
 
 # Function to add an artwork
