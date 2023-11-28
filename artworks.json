@@ -1,0 +1,26 @@
+[
+  {
+    "title": "free",
+    "artist": "Dr Drey",
+    "description": "Freedom",
+    "reviews": [
+      "A good piece of art"
+    ]
+  },
+  {
+    "title": "Peace",
+    "artist": "Koosi",
+    "description": "Africa Peace",
+    "reviews": [
+      "The aertwork mis refreshing and interesting"
+    ]
+  },
+  {
+    "title": "",
+    "artist": "",
+    "description": "",
+    "reviews": [
+      ""
+    ]
+  }
+]
