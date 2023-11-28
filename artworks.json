@@ -16,7 +16,6 @@
       "The artwork mis refreshing and interesting"
     ],
     "imageUrl": "https://ocdn.eu/images/pulscms/MDc7MDA_/4e5c07d4bf1952d14550c294e739c965.jpg"
-
   },
   {
     "title": "Mona",
@@ -26,5 +25,14 @@
       "one of a kind"
     ],
     "imageUrl": "https://cdn.britannica.com/24/189624-050-F3C5BAA9/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg"
+  },
+  {
+    "title": "Artwork1",
+    "artist": "artist1",
+    "description": "descriptioin",
+    "reviews": [
+      "review1"
+    ],
+    "Image": "https://cdn.britannica.com/24/189624-050-F3C5BAA9/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg"
   }
 ]
